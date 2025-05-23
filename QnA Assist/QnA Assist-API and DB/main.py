@@ -76,13 +76,13 @@ def fetch_api_data(api_context):
     token_url = 'https://servnow.oktapreview.com/oauth2/aus1e3ov8pyM8n9OV0h8/v1/token'
 
     token_headers = {
-        'Authorization': 'Basic MG9hMXgxZWhrcjh1ZEVIWEIwaDg6TXJqa1BwSkE5R2RKTHBTSHZ1dktBcWEyeFJDdUp3TzZXM3RJVy1uZHZJWnNYUkxtaDVWZnJtcWZNamNfbWRsRg==',
+        'Authorization': 'Basic MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==',
         'Content-Type': 'application/x-www-form-urlencoded','User-Agent': 'insomnia/8.4.3'
                     }
 
     token_data = {
         'grant_type': 'client_credentials',
-        'scope': 'dtservices.ems.entitlement.admin'
+        'scope': 'XXXXXX'
                  }       
 
     token_response = requests.post(token_url, headers=token_headers, data=token_data)
